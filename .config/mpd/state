@@ -2,7 +2,7 @@ sw_volume: 96
 audio_device_state:1:My Pulse Output
 audio_device_state:1:my_fifo
 state: stop
-current: 276
+current: 279
 random: 0
 repeat: 0
 single: 0
@@ -288,4 +288,13 @@ playlist_begin
 274:Various artists - The Sound of SceneSat Volume 3/Saarde - The Sound of SceneSat Volume 3 - 63 Future Sound Of Rågsved.mp3
 275:Various artists - The Sound of SceneSat Volume 3/Sademetsä - The Sound of SceneSat Volume 3 - 64 Planck's Wife Swallows The Quantum Foam.mp3
 276:Various artists - The Sound of SceneSat Volume 3/Saga Musix - The Sound of SceneSat Volume 3 - 42 Snowflakes.mp3
+277:Iron Maiden/A Matter of Life and Death/02 These Colours Don’t Run.flac
+278:Iron Maiden/A Matter of Life and Death/03 Brighter Than a Thousand Suns.flac
+279:Iron Maiden/A Matter of Life and Death/04 The Pilgrim.flac
+280:Iron Maiden/A Matter of Life and Death/05 The Longest Day.flac
+281:Iron Maiden/A Matter of Life and Death/06 Out of the Shadows.flac
+282:Iron Maiden/A Matter of Life and Death/07 The Reincarnation of Benjamin Breeg.flac
+283:Iron Maiden/A Matter of Life and Death/08 For the Greater Good of God.flac
+284:Iron Maiden/A Matter of Life and Death/09 Lord of Light.flac
+285:Iron Maiden/A Matter of Life and Death/10 The Legacy.flac
 playlist_end

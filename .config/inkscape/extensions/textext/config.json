@@ -1,0 +1,13 @@
+{
+  "gui": {
+    "line_numbers": true, 
+    "insert_spaces": true, 
+    "auto_indent": true, 
+    "confirm_close": true, 
+    "word_wrap": true, 
+    "tab_width": 4
+  }, 
+  "previous_tex_command": "pdflatex", 
+  "preamble": "/home/k4l1br/.config/inkscape/extensions/textext/default_packages.tex", 
+  "scale": 0.2
+}

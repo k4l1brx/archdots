@@ -1,8 +1,8 @@
-sw_volume: 96
+sw_volume: 0
 audio_device_state:1:My Pulse Output
 audio_device_state:1:my_fifo
 state: stop
-current: 279
+current: 223
 random: 0
 repeat: 0
 single: 0
@@ -297,4 +297,23 @@ playlist_begin
 283:Iron Maiden/A Matter of Life and Death/08 For the Greater Good of God.flac
 284:Iron Maiden/A Matter of Life and Death/09 Lord of Light.flac
 285:Iron Maiden/A Matter of Life and Death/10 The Legacy.flac
+286:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/01 Five Years.flac
+287:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/02 Soul Love.flac
+288:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/03 Moonage Daydream.flac
+289:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/04 Starman.flac
+290:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/05 It Ain’t Easy.flac
+291:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/06 Lady Stardust.flac
+292:Iron Maiden/Dance of Death/01 Wildest Dreams.flac
+293:Iron Maiden/Dance of Death/02 Rainmaker.flac
+294:Iron Maiden/The Book of Souls/01 If Eternity Should Fail.flac
+295:Iron Maiden/No Prayer for the Dying/01 Tailgunner.flac
+296:Iron Maiden/No Prayer for the Dying/02 Holy Smoke.flac
+297:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/07 Star.flac
+298:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/08 Hang On to Yourself.flac
+299:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/09 Ziggy Stardust.flac
+300:David Bowie/The Rise and Fall of Ziggy Stardust and the Spiders From Mars/10 Suffragette City.flac
+301:Guided by Voices/Alien Lanes/01 A Salty Salute.flac
+302:__/00.1.opus
+303:Guided by Voices/The Best of Guided By Voices Human Amusements At Hourly Rates (Album)/18 Surgical Focus.flac
+304:Guided by Voices/The Best of Guided By Voices Human Amusements At Hourly Rates (Album)/20 The Best Of Jill Hives.flac
 playlist_end

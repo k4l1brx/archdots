@@ -1,6 +1,12 @@
 snippet today "Date"
 `date +%F`
 endsnippet
+snippet { "Auto Close" wA
+{$1}$0
+endsnippet
+snippet ( "Auto close" wA
+($1)$0
+endsnippet
 snippet ssum "Sum" wA
 \sum^{$2}_{$1} $0
 endsnippet
@@ -18,6 +24,10 @@ snippet equa "equation" bA
 		$0
 	\end{gathered}
 \end{equation*}
+endsnippet
+
+snippet abs "Absolute" wA
+\left| $1 \right| $0
 endsnippet
 
 snippet mk "Math" wA

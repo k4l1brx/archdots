@@ -7,8 +7,10 @@ pids=$(xdotool search --class $1)
 
 if [[ -z "$pids" ]] 
 then
-	exec st -c $1 &
+	exec alacritty --class $1,$1
 fi
+
+pids=$(xdotool search --class $1)
 
 for pid in $pids; do
 	echo "Toggle $pid"

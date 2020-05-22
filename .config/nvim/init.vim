@@ -1,5 +1,5 @@
 "========================================
-"___ _   _ ___ _______     _____ __  ___
+"___ _    _ ___ _______     _____ __  ___
 "|_ _| \ | |_ _|_   _\ \   / /_ _|  \/  |
 " | ||  \| || |  | |  \ \ / / | || |\/| |
 " | || |\  || |  | |_  \ V /  | || |  | |
@@ -18,13 +18,11 @@ filetype plugin indent on
 " Syntax highlighting
 syntax on
 " Stop vim from wrapping lines at a middle of a word
-
 set nowrap
 set linebreak
-
+let mapleader = " "
 " Netrw configuration 
 "
-
 let g:netrw_liststyle=3
 let g:netrw_banner = 0
 	"Open file in a new tab
@@ -60,7 +58,6 @@ Plug 'junegunn/goyo.vim'
 
 Plug 'vimwiki/vimwiki'
 " Goyo! Goyo
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'vimwiki/vimwiki'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'godlygeek/tabular'
@@ -70,9 +67,12 @@ let g:vim_markdown_math = 1
 Plug 'lervag/vimtex'
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=4
+" let g:vimtex_quickfix_mode=0
+let g:vimtex_quickfix_enabled=0
+Plug 'KeitaNakamura/tex-conceal.vim'
 set conceallevel=1
 let g:tex_conceal='abdmg'
+hi Conceal ctermbg=none
 Plug 'sirver/ultisnips'
 let g:UltiSnipsSnippetDirectories=["~/.config/nvim/my-snips"]
 let g:UltiSnipsExpandTrigger = '<tab>'
@@ -83,10 +83,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'shinchu/lightline-gruvbox.vim'
 let g:lightline = {}
 let g:lightline.colorscheme = 'gruvbox'
-Plug 'takac/vim-hardtime'
-let g:hardtime_default_on = 0
-let g:list_of_disabled_keys = ["<backspace>", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
-let g:hardtime_timeout = 1000
 
 Plug 'justinmk/vim-syntax-extra'
 call plug#end()
@@ -129,9 +125,8 @@ vnoremap <Down> <Nop>
 vnoremap <Left> <Nop>
 vnoremap <Right> <Nop>
 vnoremap <Up> <Nop>
-
 " Remap key
-
+inoremap <C-[> <ESC>:w<CR>
 nnoremap <C-l> $
 nnoremap <C-h> ^
 vnoremap <C-l> $
@@ -170,3 +165,5 @@ set t_Co=256
 " highlight nonText ctermbg=NONE
 
 colorscheme gruvbox
+
+

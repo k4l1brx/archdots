@@ -23,7 +23,7 @@
 
 /*================== NEW TAB BG COLOR ==================*/
 @-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
- body { background-color: var(--page_bg_color) !important;}
+ 	html,body { background: var(--night_color1) !important; }
 }
 
 /*================== SEARCH BAR ==================*/

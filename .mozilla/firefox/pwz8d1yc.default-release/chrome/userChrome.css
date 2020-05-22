@@ -52,7 +52,7 @@ toolbox#navigator-toolbox  {
 	/* border: 0 !important; */
 	display: none;
 }
-
+#browser vbox #appcontent tabbrowser, #content, #tabbrowser-tabpanels, browser[type=content-primary], browser[type=content] > html { background: var(--night_color1) !important }
 #tabbrowser-tabs:not([movingtab]) > .tabbrowser-tab[beforeselected-visible]::after, #tabbrowser-tabs[movingtab] > .tabbrowser-tab[visuallyselected]::before, .tabbrowser-tab[visuallyselected]::after {
     opacity: 0 !important;
 }
@@ -274,6 +274,10 @@ toolbar#nav-bar toolbarbutton #fxa-avatar-image {
 	-moz-appearance: none !important;
 	background-color: var(--night_color2) !important;
 	border-radius: 3px !important;
+	color: var(--frost_color3) !important;
+}
+..content-primary {
+	background-color: var(--night_color1) !important;
 	color: var(--frost_color3) !important;
 }
 .content-container {

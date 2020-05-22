@@ -1,7 +1,10 @@
 snippet _CP_TEMPLATE_1_
 #include <bits/stdc++.h>
-#define long long long
-
+#ifdef ONLINE_JUDGE
+#define LL %I64d
+#else
+#define LL %ldd
+#endif
 using namespace std;
 
 int main() {

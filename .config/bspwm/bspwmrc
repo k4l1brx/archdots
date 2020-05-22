@@ -1,19 +1,27 @@
 #! /bin/sh
 # bspc monitor -d I II III IV V VI VII VIII IX X
-bspc monitor -d "Code" "Term" "TeX" "PDF" "Net" "Other"
+bspc monitor -d "CODE" "TERM" "TEX" "PDF" "NET" "VID" "OTH"
 # bspc monitor DP1 -d I II III IV V VI VII VIII IX X
-bspc monitor DP1 -d I II III IV V 
-bspc monitor HDMI1 -d I II III IV V 
+bspc monitor DP1 -d I II III IV V VI VII
+bspc monitor HDMI1 -d I II III IV V VI VII
 # bspc monitor HDMI1 -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         0
-bspc config window_gap           5
+bspc config border_width         3
+bspc config window_gap           0
 
-bspc config split_ratio          0.5
+color1=$(xrdb -q | grep "\.color1:" | awk '{ print $2}')
+color2=$(xrdb -q | grep "\.color1:" | awk '{ print $2}')
+color3=$(xrdb -q | grep "\.color1:" | awk '{ print $2}')
+color4=$(xrdb -q | grep "\.color4:" | awk '{ print $2}')
+color5=$(xrdb -q | grep "\.color5:" | awk '{ print $2}')
+
+
+bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 # bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Firefox desktop='^4' 
+bspc rule -a firefox desktop='^5' 
+bspc rule -a zoom desktop='^7' state=tiled
 bspc rule -a Zathura state=tiled
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
@@ -26,18 +34,22 @@ bspc rule -a Screenkey manage=off
 # feh --bg-center ~/Pictures/My_Wallpapers/wallhaven-zmjd7o_1366x768.png
 # feh --bg-center ~/Pictures/My_Wallpapers/Arch-2.png
 # feh --bg-center ~/Pictures/My_Wallpapers/Wallhaven/wallhaven-7379v9_1366x768.png
+
 # feh --bg-center ~/Pictures/My_Wallpapers/Arch-2.png
-feh --bg-center ~/Pictures/My_Wallpapers/99-0.png
+
+feh --bg-center ~/Pictures/My_Wallpapers/calm_sunset_mountains_5k-1366x768.jpg
 # wal -R
-bspc config active_border_color '#0C1115'
-bspc config normal_border_color '#0C1115'
-bspc config focused_border_color '#00ff00'
-# picom --active-opacity 0.95 --inactive-opacity 0.9 --frame-opacity 0.95 -c -b
 
-killall picom; picom -c -b
-killall ibus-daemon; ibus-daemon -drx
-killall sxhkd; sxhkd &
-killall polybar; polybar example &
+bspc config active_border_color $color5
+bspc config normal_border_color $color1
+bspc config focused_border_color $color4
 
+killall picom
+killall sxhkd
+sxhkd &
+killall polybar
+polybar example &
+ibus-daemon -drx
 setxkbmap us &
+picom -b
 bspc rule -a dropdown sticky=on state=floating hidden=on locked=on

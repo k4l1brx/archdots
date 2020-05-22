@@ -140,7 +140,7 @@
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
          usecurrent="1"
-         persp="perspective54">
+         persp="perspective830">
         <side
            id="XYfront"
            style="fill:#8686bf;stroke:none;stroke-linejoin:round;"
@@ -200,7 +200,8 @@
          selcue="1"
          style="stroke-width:1px;"
          usecurrent="0"
-         average_all_sketches="1" />
+         average_all_sketches="1"
+         pressure="0" />
       <eventcontext
          id="pen"
          mode="drag"
@@ -337,6 +338,7 @@
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
+       use_svg2="1"
        style="fill:black;fill-opacity:1;stroke:none;font-family:'Times New Roman';font-style:normal;font-weight:normal;font-size:5.33333333px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Times New Roman, ';font-stretch:normal;font-variant:normal"
        selcue="1"
        align_mode="1">
@@ -348,7 +350,6 @@
        id="nodes"
        selcue="1"
        gradientdrag="1"
-       highlight_color="4278190335"
        pathflash_enabled="1"
        pathflash_unselected="0"
        pathflash_timeout="500"
@@ -363,7 +364,8 @@
        x="0"
        y="0"
        edit_clipping_paths="1"
-       edit_masks="0" />
+       edit_masks="0"
+       highlight_color="4278190335" />
     <eventcontext
        id="tweak"
        selcue="0"
@@ -586,8 +588,8 @@
        page="0"
        x="0"
        y="0"
-       w="341"
-       h="368"
+       w="378"
+       h="441"
        visible="1"
        state="2"
        placement="1" />
@@ -645,8 +647,8 @@
        id="spellcheck"
        w="200"
        h="250"
-       lang="en_US"
-       ignorenumbers="1" />
+       ignorenumbers="1"
+       lang="en_US" />
     <group
        id="documentoptions"
        state="2"
@@ -736,6 +738,7 @@
        enable_preview="1"
        path=""
        ask="1"
+       ask_svg="1"
        link="embed"
        scale="optimizeQuality"
        forcexdpi="1" />
@@ -1071,10 +1074,10 @@
          origin_y="0.0"
          spacing_x="1.0"
          spacing_y="1.0"
-         color="1061158688"
-         empcolor="1061158720"
          empspacing="5"
-         dotted="0" />
+         dotted="0"
+         color="1061158688"
+         empcolor="1061158720" />
       <group
          id="axonom"
          units="mm"
@@ -1083,9 +1086,9 @@
          spacing_y="1.0"
          angle_x="30.0"
          angle_z="30.0"
+         empspacing="5"
          color="1061158688"
-         empcolor="1061158720"
-         empspacing="5" />
+         empcolor="1061158720" />
     </group>
     <group
        id="workarounds"
@@ -1093,6 +1096,12 @@
        partialdynamic="0" />
     <group
        id="rendering" />
+    <group
+       id="svgeditor"
+       value="inkscape" />
+    <group
+       id="dash"
+       scale="1" />
   </group>
   <group
      id="extensions"
@@ -1243,4 +1252,13 @@
   <group
      id="ui"
      language="" />
+  <group
+     menuIcons_objects="0"
+     menuIcons_layers="0"
+     menuIcons_canvas="0"
+     iconTheme="Adwaita"
+     gtkTheme="Adwaita"
+     defaultIconTheme="Adwaita"
+     defaultTheme="Adwaita"
+     id="theme" />
 </inkscape>
